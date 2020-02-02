@@ -26,11 +26,75 @@
 
 	<main>
 
-		<h1>Выбор жилья</h1>
+		<h1 class="visually-hidden">Выбор жилья</h1>
 
 		<section>
 
-			<h2>Фильтр гостиниц</h2>
+			<h2 class="visually-hidden">Фильтр жилья</h2>
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool"
+								checked>
+							<label for="pool">
+								Бассейн
+							</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"
+								id="parking">
+							<label for="parking">
+								Парковка
+							</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="wifi">
+							<label for="wifi">
+								Wi-Fi
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel"
+								checked>
+							<label for="hotel">
+								Гостиница
+							</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel"
+								checked>
+							<label for="motel">
+								Мотель
+							</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments"
+								id="apartments" checked>
+							<label for="apartments">
+								Апартаменты
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (Р):</legend>
+					<ul>
+						<li>от 0</li>
+						<li>До 3000</li>
+					</ul>
+					<div>
+						<input type="range" name="price" min="0" max="3000" step="1000">
+					</div>
+				</fieldset>
+				<button class="filter-button button" type="submit">Показать</button>
+			</form>
 			<!-- Здесь будет форма -->
 
 			<div>
@@ -50,13 +114,13 @@
 		</section>
 
 		<section>
-			<h2>Cписок гостиниц</h2>
+			<h2 class="visually-hidden">Cписок жилья</h2>
 			<ul>
 				<li>
-					<h3>
-						<a href="">Amara Resort & Spa</a>
-					</h3>
 					<a href="#">
+						<h3>
+							<span class="catalog-item">Amara Resort & Spa</span>
+						</h3>
 						<img src="img/amara.jpg" width="135" height="90" alt="Гостиница Амара">
 					</a>
 					<p>
@@ -73,10 +137,10 @@
 					</p>
 				</li>
 				<li>
-					<h3>
-						<a href="">Desert Quail Inn</a>
-					</h3>
 					<a href="#">
+						<h3>
+							<span class="catalog-item">Desert Quail Inn</span>
+						</h3>
 						<img src="img/desert.jpg" width="135" height="90" alt="Мотель Десерт">
 					</a>
 					<p>
@@ -93,10 +157,10 @@
 					</p>
 				</li>
 				<li>
-					<h3>
-						<a href="">Villas at Poco Diablo</a>
-					</h3>
 					<a href="#">
+						<h3>
+							<span class="catalog-item">Villas at Poco Diablo</span>
+						</h3>
 						<img src="img/villas.jpg" width="135" height="90" alt="Аппартаменты Виллас">
 					</a>
 					<p>
@@ -135,7 +199,7 @@
 		<p>
 			Website by
 			<a href="https://htmlacademy.ru">
-				<img src="img/logo-htmlacademy.svg" width="115"	height="41" alt="Логотип HTML академии">
+				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML академии">
 			</a>
 		</p>
 	</footer>

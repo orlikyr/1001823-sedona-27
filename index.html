@@ -97,6 +97,42 @@
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
 
+    <section class="appointment">
+
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <button type="button">Поиск гостиницы в Седоне</button>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+  
+        <div class="half-width">
+          <label for="arrival-date">Дата заезда</label>
+          <input type="text" id="arrival-date" name="arrival-date" placeholder="24 Апреля 2017" required>
+          <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
+        </div>
+        <div class="half-width">
+          <label for="departure-date">Дата выезда</label>
+          <input type="text" id="departure-date" name="departure-date" placeholder="4 Июля 2017" required>
+          <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
+        </div>
+        <div class="quantity-width">
+          <label for="adults">Взрослые</label>
+          <input type="number" id="adults" name="adults" min="1" step="1" required>
+          <button type="button"><span class="visually-hidden">Убрать</span></button>
+          <button type="button"><span class="visually-hidden">Добавить</span></button>
+        </div>
+        <div class="quantity-width">
+          <label for="children">Дети</label>
+          <input type="number" id="children" name="children" min="0" step="1" required>
+          <button type="button"><span class="visually-hidden">Убрать</span></button>
+          <button type="button"><span class="visually-hidden">Добавить</span></button>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Найти">
+        </div>
+  
+  
+      </form>
+    </section>
+
     <section>
       <h2>Карта</h2>
     </section>
@@ -112,9 +148,9 @@
 
     <div>
       <ul>
-        <li><a class="social-links__link" href="#">Твиттер</a></li>
-        <li><a class="social-links__link" href="#">Фейсбук</a></li>
-        <li><a class="social-links__link" href="#">Ютюб</a></li>
+        <li><a class="social-links__link" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+				<li><a class="social-links__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a class="social-links__link" href="#"><span class="visually-hidden">Ютюб</span</a></li>
       </ul>
     </div>
 
@@ -125,35 +161,6 @@
       </a>
     </p>
   </footer>
-
-  <section class="appointment">
-
-    <h2>Поиск гостиницы в Седоне</h2>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-
-      <div class="half-width">
-        <label for="arrival-date">Дата заезда</label>
-        <input type="date" id="arrival-date" name="arrival-date" required>
-      </div>
-      <div class="half-width">
-        <label for="departure-date">Дата выезда</label>
-        <input type="date" id="departure-date" name="departure-date" required>
-      </div>
-      <div class="quantity-width">
-        <label for="adults">Взрослые</label>
-        <input type="number" id="adults" name="adults" min="1" step="1" required>
-      </div>
-      <div class="quantity-width">
-        <label for="children">Дети</label>
-        <input type="number" id="children" name="children" min="0" step="1" required>
-      </div>
-      <div class="buttons">
-        <input type="submit" value="Найти">
-      </div>
-
-
-    </form>
-  </section>
 
 </body>
 

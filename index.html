@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,20 +28,20 @@
   <main class="container">
 
     <section>
-      <h1>
+      <h1 class="page-title">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </h1>
     </section>
 
-    <section>
-      <h2>
+    <section class="advantages">
+      <h2 class="advantages-title">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </h2>
 
-      <div>
-        <div>
-          <h3>Настоящий городок</h3>
-          <span>— №1 —</span>
+      <div class="advantages-list">
+        <div class="advantages-item advantages-item-blue">
+          <h3 class="advantages-subtitle-white">Настоящий городок</h3>
+          <span class="advantages-number">— №1 —</span>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div>
@@ -47,23 +50,26 @@
       </div>
 
       <div>
-        <ul>
-          <li>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Жильё</h3>
             <p class="house-icon">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Еда</h3>
             <p class="food-icon">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Сувениры</h3>
             <p class="gifts-icon">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </div>
 
-      <div>
-        <div>
-          <h3>Там есть Мост дьявола</h3>
-          <span>— №2 —</span>
+      <div class="advantages-list">
+        <div class="advantages-item advantages-item-blue">
+          <h3 class="advantages-subtitle-white">Там есть Мост дьявола</h3>
+          <span class="advantages-number">— №2 —</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div>
@@ -72,27 +78,27 @@
       </div>
 
       <div>
-        <ul>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <span>— №3 —</span>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Небольшая площадь</h3>
+            <span class="advantages-number">— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <span>— №4 —</span>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Красивая дорога</h3>
+            <span class="advantages-number">— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
-            <h3>Мало туристов</h3>
-            <span>— №5 —</span>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle-black">Мало туристов</h3>
+            <span class="advantages-number">— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section>
+    <section class="appointment-title">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
@@ -100,62 +106,62 @@
     <section class="appointment">
 
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button type="button" class="search-hotels">Поиск гостиницы в Седоне</button>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
   
-        <div class="half-width">
+        <div class="appointment-item">
           <label for="arrival-date">Дата заезда</label>
           <input type="text" id="arrival-date" name="arrival-date" placeholder="24 Апреля 2017" required>
           <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
         </div>
-        <div class="half-width">
+        <div class="appointment-item">
           <label for="departure-date">Дата выезда</label>
           <input type="text" id="departure-date" name="departure-date" placeholder="4 Июля 2017" required>
           <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
         </div>
-        <div class="quantity-width">
+        <div class="appointment-item">
           <label for="adults">Взрослые</label>
           <input type="number" id="adults" name="adults" min="1" step="1" required>
           <button type="button"><span class="visually-hidden">Убрать</span></button>
           <button type="button"><span class="visually-hidden">Добавить</span></button>
         </div>
-        <div class="quantity-width">
+        <div class="appointment-item">
           <label for="children">Дети</label>
           <input type="number" id="children" name="children" min="0" step="1" required>
           <button type="button"><span class="visually-hidden">Убрать</span></button>
           <button type="button"><span class="visually-hidden">Добавить</span></button>
         </div>
-        <div class="buttons">
-          <input type="submit" value="Найти">
+        <div>
+          <button type="submit" class="button-blue">Найти</button>
         </div>
   
   
       </form>
     </section>
 
-    <section>
+    <section class="visually-hidden">
       <h2>Карта</h2>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
 
     <p>
       <a href="#">#visitSEDONA</a>
-      <a href="+74956660266">Тел: +7(495) 666-02-66</a>
+      <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
     </p>
 
-    <div>
+    <div class="footer-social">
       <ul>
-        <li><a class="social-links__link" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-				<li><a class="social-links__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-				<li><a class="social-links__link" href="#"><span class="visually-hidden">Ютюб</span</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Ютюб</span></a></li>
       </ul>
     </div>
 
-    <p>
-      Website by
+    <p class="footer-copyright">
+      <span>Website by</span>
       <a href="https://htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML академии">
       </a>

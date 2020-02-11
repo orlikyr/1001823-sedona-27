@@ -45,11 +45,17 @@ a {
   color: #000000;
 }
 
-.menu-info:hover {
+.menu-info:hover,
+.menu-photo:hover,
+.menu-map:hover,
+.menu-hotels:hover {
 	color: #81b3d2;
 }
 
-.menu-info:active {
+.menu-info:active,
+.menu-photo:active,
+.menu-map:active,
+.menu-hotels:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -127,7 +133,8 @@ a {
 }
 
 .found-list a:active {
-	color: #000000;
+  color: #000000;
+  border: none;
 }
 
 a.sorting {
@@ -190,6 +197,7 @@ a.sorting {
 
 .button-details:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-book {
@@ -205,6 +213,7 @@ a.sorting {
 
 .button-book:active {
   background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
@@ -403,14 +412,4 @@ a.sorting {
   text-align: center;
 }
 
-.footer-copyright a {
-	background-color: #231f20;
-}
 
-.footer-copyright a:hover {
-  background-color: #89b8d5;
-}
-
-.footer-copyright a:active {
-  background-color: #bdbbbc;
-}

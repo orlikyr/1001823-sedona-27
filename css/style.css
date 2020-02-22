@@ -24,7 +24,7 @@ body {
 
 html,
 body {
-  min-width: 1280px;
+  min-width: 1200px;
 }
 
 a {
@@ -107,11 +107,16 @@ img {
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 31px;
-  padding-left: 72px;
-  padding-right: 74px;
+  margin: 0;
+}
+
+.filter {
+  display: flex;
 }
 
 .filter fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -126,6 +131,18 @@ img {
   padding: 0;
   margin: 0;
   color: #ffffff;
+}
+
+fieldset.infostructure {
+  margin-left: 72px;
+}
+
+fieldset.type-housing {
+  margin-left: 115px;
+}
+
+fieldset.cost-day {
+  margin-left: auto;
 }
 
 .filter-input:hover+label {
@@ -227,16 +244,27 @@ a.sorting {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 72px;
   padding-right: 72px;
-  
+}
+
+.catalog-found img {
+  margin-left: 72px;
+}
+
+.catalog-description {
+  margin-left: 30px;
 }
 
 .catalog-item {
+  display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.rating-star {
+  margin-left: auto;
 }
 
 .catalog-item:hover {
@@ -456,16 +484,14 @@ a.sorting {
 }
 
 .footer-contacts {
-  width: 223px;
+  width: 400px;
   margin: 0;
-  margin-right: 169px;
-  margin-left: 132px;
+  text-align: center;
 }
 
 .footer-social {
-  width: 150px;
+  width: 400px;
   text-align: center;
-  margin-right: 228px;
 }
 
 .footer-social ul {
@@ -473,6 +499,7 @@ a.sorting {
 }
 
 .social-button {
+  width: 400px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -487,7 +514,7 @@ a.sorting {
 }
 
 .footer-copyright {
-  width: 200px;
+  width: 400px;
   margin: 0;
   text-align: center;
 }

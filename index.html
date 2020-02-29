@@ -28,6 +28,12 @@
 
     <main class="container">
 
+      <div class="welcome-wrapper">
+        <div class="img-welcome">
+          <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать">
+        </div>
+      </div>
+
       <section>
         <h1 class="page-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -40,8 +46,8 @@
         </h2>
 
         <div class="advantages-list advantages-blue">
-          <div class="advantages-item advantages-item-blue">
-            <h3 class="advantages-subtitle-white">Настоящий городок</h3>
+          <div class="advantages-item blue">
+            <h3 class="advantages-subtitle">Настоящий городок</h3>
             <span class="advantages-number">— №1 —</span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
@@ -51,29 +57,29 @@
         </div>
 
         <div class="advantages-container">
-          <div class="advantages-list">
-            <div class="advantages-item">
-              <h3 class="advantages-subtitle-black house">Жильё</h3>
-              <p class="advantages-descr">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <div class="icon-list">
+            <div class="icon-item house">
+              <h3 class="icon-subtitle-black">Жильё</h3>
+              <p class="icon-descr">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
-            <div class="advantages-item">
-              <h3 class="advantages-subtitle-black food">Еда</h3>
-              <p class="advantages-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <div class="icon-item food">
+              <h3 class="icon-subtitle-black">Еда</h3>
+              <p class="icon-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
-            <div class="advantages-item">
-              <h3 class="advantages-subtitle-black gifts">Сувениры</h3>
-              <p class="advantages-descr">Не только китайского, но и местного производства!</p>
+            <div class="icon-item gifts">
+              <h3 class="icon-subtitle-black">Сувениры</h3>
+              <p class="icon-descr">Не только китайского, но и местного производства!</p>
             </div>
           </div>
         </div>
 
         <div class="advantages-list advantages-blue">
-          <div class="advantages-item advantages-item-blue bridge">
-            <h3 class="advantages-subtitle-white">Там есть Мост дьявола</h3>
+          <div class="advantages-item blue">
+            <h3 class="advantages-subtitle">Там есть<br> Мост дьявола</h3>
             <span class="advantages-number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <div>
+          <div class="advantages-right">
             <img src="img/advantages2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
         </div>
@@ -81,17 +87,17 @@
         <div>
           <div class="advantages-list">
             <div class="advantages-item">
-              <h3 class="advantages-subtitle-black">Небольшая площадь</h3>
+              <h3 class="advantages-subtitle black">Небольшая площадь</h3>
               <span class="advantages-number">— №3 —</span>
               <p>Все достопримечательности находятся очень близко</p>
             </div>
             <div class="advantages-item">
-              <h3 class="advantages-subtitle-black">Красивая дорога</h3>
+              <h3 class="advantages-subtitle black">Красивая дорога</h3>
               <span class="advantages-number">— №4 —</span>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="advantages-item">
-              <h3 class="advantages-subtitle-black">Мало туристов</h3>
+              <h3 class="advantages-subtitle black">Мало туристов</h3>
               <span class="advantages-number">— №5 —</span>
               <p>Большинство едет в гранд каньон и толпится там</p>
             </div>
@@ -101,7 +107,7 @@
 
       <section class="appointment-title">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </section>
 
       <section class="appointment">
@@ -110,29 +116,32 @@
         <button type="button" class="search-hotels">Поиск гостиницы в Седоне</button>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="appointment-item">
+          <div class="appointment-item calendar">
             <label for="arrival-date">Дата заезда</label>
             <input type="text" class="item-table" id="arrival-date" name="arrival-date" placeholder="24 Апреля 2017"
               required>
-            <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
+            <button type="button" class="button-table"><span class="visually-hidden">Открыть календарь</span></button>
           </div>
-          <div class="appointment-item">
+          <div class="appointment-item calendar">
             <label for="departure-date">Дата выезда</label>
             <input type="text" class="item-table" id="departure-date" name="departure-date" placeholder="4 Июля 2017"
               required>
             <button type="button"><span class="visually-hidden">Открыть календарь</span></button>
           </div>
           <div class="appointment-item">
-            <label for="adults">Взрослые</label>
-            <input type="number" id="adults" name="adults" min="1" step="1" required>
-            <button type="button"><span class="visually-hidden">Убрать</span></button>
-            <button type="button"><span class="visually-hidden">Добавить</span></button>
-          </div>
-          <div class="appointment-item">
-            <label for="children">Дети</label>
-            <input type="number" id="children" name="children" min="0" step="1" required>
-            <button type="button"><span class="visually-hidden">Убрать</span></button>
-            <button type="button"><span class="visually-hidden">Добавить</span></button>
+            <div class="quantity">
+              <label for="adults">Взрослые:</label>
+              <input class="number-item" type="number" id="adults" name="adults" min="1" step="1" required>
+              <button type="button" class="button-minus"><span class="visually-hidden">Убрать</span></button>
+              <button type="button" class="button-plus"><span class="visually-hidden">Добавить</span></button>
+            </div>
+
+            <div class="quantity">
+              <label for="children">Дети:</label>
+              <input class="number-item" type="number" id="children" name="children" min="0" step="1" required>
+              <button type="button" class="button-minus"><span class="visually-hidden">Убрать</span></button>
+              <button type="button" class="button-plus"><span class="visually-hidden">Добавить</span></button>
+            </div>
           </div>
           <div>
             <button type="submit" class="button-blue">Найти</button>

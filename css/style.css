@@ -1,11 +1,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -43,7 +45,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -51,10 +54,13 @@ img {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 14px;
   line-height: 26px;
@@ -76,8 +82,11 @@ img {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
@@ -135,6 +144,8 @@ img {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -190,6 +201,12 @@ fieldset.infostructure {
   background-image: url("../img/checkbox-on1.svg");
 }
 
+input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 .filter-option label {
   display: inline-block;
   vertical-align: middle;
@@ -234,7 +251,9 @@ fieldset.cost-day {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -293,7 +312,8 @@ fieldset.cost-day {
   border: 8px solid #ffffff;
   border-radius: 50%;
   padding: 0;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -338,8 +358,12 @@ fieldset.cost-day {
 }
 
 .found-hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-top: 14px;
   padding-bottom: 16px;
   padding-left: 72px;
@@ -349,6 +373,8 @@ fieldset.cost-day {
 
 .found-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -368,37 +394,37 @@ fieldset.cost-day {
   height: 10px;
 }
 
-.arrow-top svg {
+.arrow-top {
   position: absolute;
   right: 21px;
-  top: 10px;
+  bottom: 5px;
   width: 11px;
   height: 10px;
   fill: #cacaca;
 }
 
-.arrow-top svg:hover {
+.arrow-top:hover {
   fill: #231F20;
 }
 
-.arrow-top svg:active {
+.arrow-top:active {
   fill: #81b3d2;
 }
 
-.arrow-bottom svg {
+.arrow-bottom {
   position: absolute;
   right: 0;
-  top: 10px;
+  bottom: 5px;
   width: 11px;
   height: 10px;
   fill: #cacaca;
 }
 
-.arrow-bottom svg:hover {
+.arrow-bottom:hover {
   fill: #231F20;
 }
 
-.arrow-bottom svg:active {
+.arrow-bottom:active {
   fill: #81b3d2;
 }
 
@@ -452,6 +478,8 @@ a.sorting {
 }
 
 .catalog-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 24px;
   padding-bottom: 16px;
@@ -478,8 +506,9 @@ a.catalog-description {
 }
 
 p.catalog-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   margin-top: 10px;
   margin-bottom: 13px;
@@ -616,11 +645,15 @@ a.catalog-description:active {
 }
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .advantages-right {
-  order: -1;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .advantages-item {
@@ -658,6 +691,8 @@ a.catalog-description:active {
 }
 
 .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -686,7 +721,6 @@ a.catalog-description:active {
   height: 72px;
   margin-left: -37.5px;
   background-image: url("../img/icon-1.svg");
-  background-color: #f2f2f2;
 }
 
 .icon-item.food::before {
@@ -696,7 +730,6 @@ a.catalog-description:active {
   height: 70px;
   margin-left: -37px;
   background-image: url("../img/icon-3.svg");
-  background-color: #f2f2f2;
 }
 
 .icon-item.gifts::before {
@@ -706,7 +739,6 @@ a.catalog-description:active {
   height: 76px;
   margin-left: -32px;
   background-image: url("../img/icon-2.svg");
-  background-color: #f2f2f2;
 }
 
 .icon-subtitle-black {
@@ -782,15 +814,21 @@ a.catalog-description:active {
   width: 568px;
   padding: 55px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-color: #ffffff;
   z-index: 5;
 }
 
 .appointment-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
@@ -799,7 +837,7 @@ a.catalog-description:active {
 }
 
 .appointment-item label {
-  width: 92px;
+  width: 95px;
   padding-top: 6px;
   text-align: left;
 }
@@ -808,6 +846,63 @@ a.catalog-description:active {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
+}
+
+.appointment-item input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.appointment-item input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.appointment-item input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.appointment-item input::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.appointment-item input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.appointment-item input::-webkit-input-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000; 
+	text-transform: uppercase;
+}
+
+.appointment-item input::-moz-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000; 
+	text-transform: uppercase;
+}
+
+.appointment-item input:-ms-input-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000; 
+	text-transform: uppercase;
+}
+
+.appointment-item input::-ms-input-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000; 
+	text-transform: uppercase;
 }
 
 .appointment-item input::placeholder {
@@ -854,18 +949,22 @@ a.catalog-description:active {
 
 .item-table {
   width: 346px;
+  height: 38px;
   padding-left: 13px;
   padding-top: 6px;
   padding-bottom: 6px;
+  margin-left: auto;
 }
 
 .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 label.quantity-adults {
   padding-top: 7px;
-  margin-right: 22px;
+  margin-right: 17px;
 }
 
 label.quantity-children {
@@ -877,12 +976,28 @@ label.quantity-children {
   width: 38px;
   height: 38px;
   text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
-.number-item::-webkit-outer-spin-button,
-.number-item::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.number-item::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.number-item::-moz-placeholder {
+  text-align: center;
+}
+
+.number-item:-ms-input-placeholder {
+  text-align: center;
+}
+
+.number-item::-ms-input-placeholder {
+  text-align: center;
+}
+
+.number-item::placeholder {
+  text-align: center;
 }
 
 .button-minus {
@@ -964,6 +1079,8 @@ label.quantity-children {
 }
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 120px;
   padding: 36px 0;
@@ -1007,9 +1124,14 @@ label.quantity-children {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 150px;
   list-style: none;
   margin: 0 auto;
@@ -1017,9 +1139,15 @@ label.quantity-children {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -1065,9 +1193,5 @@ label.quantity-children {
 .button-copyright:active {
   fill: #bdbbbc;
 }
-
-
-
-
 
 

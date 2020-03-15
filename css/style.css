@@ -1217,7 +1217,7 @@ label.quantity-children {
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 120px;
-	padding: 36px 0;
+	padding: 31px 0;
 	color: #000000;
 	background-color: #ffffff;
 	opacity: 0.9;
@@ -1249,12 +1249,11 @@ label.quantity-children {
 
 .footer-contacts a {
 	display: block;
-	margin-left: -5px;
-	margin-top: -6px;
+	padding-right: 6px;
 }
 
 .footer-contacts a:last-child {
-	margin-left: 80px;
+	margin-left: 85px;
 	margin-top: 6px;
 }
 

@@ -511,6 +511,8 @@ p.catalog-description {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
 	align-items: baseline;
 	margin: 0;
 	margin-top: 7px;
@@ -1227,6 +1229,11 @@ label.quantity-children {
 	margin-top: -121px;
 }
 
+.footer-opacity p:first-child {
+	padding-right: 13px;
+	padding-top: 2px;
+}
+
 .main-footer a {
 	font-size: 21px;
 	line-height: 26px;
@@ -1238,16 +1245,17 @@ label.quantity-children {
 	width: 400px;
 	margin: 0;
 	text-align: center;
-	margin-top: 11px;
 }
 
 .footer-contacts a {
 	display: block;
+	margin-left: -5px;
+	margin-top: -6px;
 }
 
 .footer-contacts a:last-child {
-	margin-left: 85px;
-	margin-top: 3px;
+	margin-left: 80px;
+	margin-top: 6px;
 }
 
 .footer-social {
